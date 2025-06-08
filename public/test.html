@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Página de prueba</h1>
+        <p>Si puedes ver esta página, el servidor web está funcionando correctamente.</p>
+        <p class="success">✓ El servidor web funciona</p>
+        <p>Esta es una página de prueba para verificar si el problema está en Laravel/Inertia o en el servidor web.</p>
+    </div>
+
+    <script>
+        // Script básico para verificar que JavaScript funciona
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('JavaScript está funcionando');
+            const jsStatus = document.createElement('p');
+            jsStatus.className = 'success';
+            jsStatus.textContent = '✓ JavaScript funciona';
+            document.querySelector('.container').appendChild(jsStatus);
+        });
+    </script>
+</body>
+</html> 
