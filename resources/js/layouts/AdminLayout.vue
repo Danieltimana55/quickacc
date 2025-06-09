@@ -19,8 +19,7 @@ const isUrl = (...urls: string[]) => {
 const navigation = [
     { name: 'Dashboard', href: 'admin.dashboard', icon: LayoutDashboard, current: isUrl('admin/dashboard') },
     { name: 'Users', href: 'admin.users.index', icon: Users, current: isUrl('admin/users') },
-    // Las siguientes rutas están comentadas hasta que se implementen
-    // { name: 'Roles', href: 'admin.roles.index', icon: Shield, current: isUrl('admin/roles') },
+    { name: 'Roles', href: 'admin.roles.index', icon: Shield, current: isUrl('admin/roles') },
     // { name: 'Formations', href: 'admin.formations.index', icon: BookOpen, current: isUrl('admin/formations') },
     // { name: 'Devices', href: 'admin.devices.index', icon: Smartphone, current: isUrl('admin/devices') },
     // { name: 'Records', href: 'admin.records.index', icon: FileText, current: isUrl('admin/records') },
