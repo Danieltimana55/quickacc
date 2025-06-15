@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Link, usePage } from '@inertiajs/vue3';
 import AppLogoIcon from '@/components/AppLogoIcon.vue';
-import { Users, Shield, BookOpen, Smartphone, FileText, LayoutDashboard } from 'lucide-vue-next';
+import { Users, Shield, BookOpen, Smartphone, FileText, LayoutDashboard, Key } from 'lucide-vue-next';
 
 const page = usePage();
 
@@ -20,9 +20,10 @@ const navigation = [
     { name: 'Dashboard', href: 'admin.dashboard', icon: LayoutDashboard, current: isUrl('admin/dashboard') },
     { name: 'Users', href: 'admin.users.index', icon: Users, current: isUrl('admin/users') },
     { name: 'Roles', href: 'admin.roles.index', icon: Shield, current: isUrl('admin/roles') },
-    // { name: 'Formations', href: 'admin.formations.index', icon: BookOpen, current: isUrl('admin/formations') },
-    // { name: 'Devices', href: 'admin.devices.index', icon: Smartphone, current: isUrl('admin/devices') },
-    // { name: 'Records', href: 'admin.records.index', icon: FileText, current: isUrl('admin/records') },
+    { name: 'Formations', href: 'admin.formations.index', icon: BookOpen, current: isUrl('admin/formations') },
+    { name: 'Devices', href: 'admin.devices.index', icon: Smartphone, current: isUrl('admin/devices') },
+    { name: 'Records', href: 'admin.records.index', icon: FileText, current: isUrl('admin/records') },
+    { name: 'Instructor Codes', href: 'admin.instructor-codes.index', icon: Key, current: isUrl('admin/instructor-codes') },
 ];
 </script>
 

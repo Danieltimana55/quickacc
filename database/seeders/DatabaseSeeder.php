@@ -18,6 +18,9 @@ class DatabaseSeeder extends Seeder
         // Ejecutar el seeder de roles
         $this->call(RolesSeeder::class);
         
+        // Ejecutar el seeder de códigos de instructor
+        $this->call(InstructorCodesSeeder::class);
+        
         // Crear un usuario administrador por defecto
         User::create([
             'nombres' => 'Admin',

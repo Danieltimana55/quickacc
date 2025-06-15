@@ -28,10 +28,72 @@ export interface SharedData extends PageProps {
 
 export interface User {
     id: number;
-    name: string;
+    nombres: string;
+    apellidos: string;
+    tipo_documento: string;
+    numero_documento: string;
     email: string;
-    avatar?: string;
     email_verified_at: string | null;
+    rol_id: number;
+    formacion_id?: number;
+    rol?: Rol;
+    formacion?: Formacion;
+    created_at: string;
+    updated_at: string;
+}
+
+export interface Rol {
+    id: number;
+    nombre: string;
+    descripcion: string;
+    created_at: string;
+    updated_at: string;
+}
+
+export interface Formacion {
+    id: number;
+    nombre: string;
+    nivel: string;
+    numero_ficha: string;
+    instructor_id?: number;
+    numero_ambiente: string;
+    fecha_inicio: string;
+    fecha_fin: string;
+    jornada_id?: number;
+    created_at: string;
+    updated_at: string;
+}
+
+export interface Jornada {
+    id: number;
+    nombre: string;
+    hora_entrada: string;
+    hora_salida: string;
+    created_at: string;
+    updated_at: string;
+}
+
+export interface Dispositivo {
+    id: number;
+    tipo_dispositivo: string;
+    marca: string;
+    serial: string;
+    foto_serial: string;
+    foto_dispositivo: string;
+    user_id: number;
+    created_at: string;
+    updated_at: string;
+}
+
+export interface Registro {
+    id: number;
+    tipo_registro: string;
+    user_id: number;
+    rol_id: number;
+    celador_id: number;
+    observacion?: string;
+    justificacion?: string;
+    foto_soporte?: string;
     created_at: string;
     updated_at: string;
 }
